@@ -1,0 +1,69 @@
+/*
+  ProfileSummary.swift
+  A view that summarizes a profile.
+  It takes a Profile instance and displays some basic user information.
+  It takes a Profile value rather than a binding to the profile
+  because the parent view (ProfileHost) manages the state for this view.
+*/
+
+import SwiftUI
+
+struct ProfileSummary: View {
+    var profile: Profile
+    
+    static let goalFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        return formatter
+    }()
+    
+    var body: some View {
+        List {
+            Text(profile.username)
+                .bold()
+                .font(.title)
+            
+            Text("Notifications: \(self.profile.prefersNotifications ? "On": "Off" )")
+            
+            Text("Seasonal Photos: \(self.profile.seasonalPhoto.rawValue)")
+            
+            Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormat)")
+            
+            VStack(alignment: .leading) {
+                Text("Completed Badges")
+                    .font(.headline)
+                ScrollView {
+                    // Update the view to add several badges with varying hues and reasons for earning the badge.
+                    HStack {
+                        HikeBadge(name: "First Hike")
+                        
+                        HikeBadge(name: "Earth Day")
+                            .hueRotation(Angle(degrees: 90))
+                        
+                        HikeBadge(name: "Tenth Hike")
+                            .grayscale(0.5)
+                            .hueRotation(Angle(degrees: 45))
+                    }
+                }
+                .frame(height: 140)
+            }
+            
+            // Finish off the profile summary by including a HikeView from "Animating Views and Transitions".
+            VStack(alignment: .leading) {
+                Text("Recent Hikes")
+                    .font(.headline)
+                HikeView(hike: hikeData[0])
+            }
+        }
+    }
+}
+
+struct ProfileSummary_Previews: PreviewProvider {
+    static var previews: some View {
+        // This view takes a Profile instance and displays some basic user information.
+        // The profile summary takes a Profile value rather than a binding to the profile
+        // because the parent view (ProfileHost) manages the state for this view.
+        ProfileSummary(profile: Profile.default)
+    }
+}
