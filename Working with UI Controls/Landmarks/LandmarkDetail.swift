@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    // This userData property gets its value automatically as long as the
+    // environmentObject(_:) modifier has been applied.
     @EnvironmentObject var userData: UserData
 
     // Add a Landmark property.
@@ -35,7 +37,10 @@ struct LandmarkDetail: View {
                     Text(landmark.name)
                         .font(.title)
                     
+                    // Create a Favorite Button for Each Landmark.
                     // Create a new button next to the landmark’s name.
+                    // In the button’s action closure, the code uses landmarkIndex
+                    // with the userData object to update the landmark in place.
                     Button(action: {
                         self.userData.landmarks[self.landmarkIndex]
                             .isFavorite.toggle()

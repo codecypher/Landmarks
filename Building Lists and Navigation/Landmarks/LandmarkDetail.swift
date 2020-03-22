@@ -8,7 +8,7 @@ A view showing the details for a landmark.
 import SwiftUI
 
 struct LandmarkDetail: View {
-    // add a Landmark property to the LandmarkDetail type.
+    // Add a Landmark property to the LandmarkDetail type.
     var landmark: Landmark
     
     var body: some View {

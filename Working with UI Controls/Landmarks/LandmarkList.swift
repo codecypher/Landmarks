@@ -7,16 +7,26 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // Add a state property with its initial value set to false.
+    // @State var showFavoritesOnly = false
+
+    // Replace the showFavoritesOnly declaration with an @EnvironmentObject property
+    // This userData property gets its value automatically, as long as the
+    // environmentObject(_:) modifier has been applied to a parent.
     @EnvironmentObject private var userData: UserData
     
     var body: some View {
         List {
             // Add a Toggle view as the first child of the List view,
+            // Replace the uses of showFavoritesOnly by accessing the same property on userData.
+            // Just like on @State properties, you can access a binding to a member of the
+            // userData object by using the $ prefix.
             Toggle(isOn: $userData.showFavoritesOnly) {
                 Text("Show Favorites Only")
             }
             
             // Create a nested ForEach group to transform the landmarks into rows.
+            // Use userData.landmarks as the data when creating the ForEach instance.
             ForEach(userData.landmarks) { landmark in
                 // Filter the list of landmarks by checking the showFavoritesOnly
                 // property and each landmark.isFavorite value.
