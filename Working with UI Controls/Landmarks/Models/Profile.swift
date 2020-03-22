@@ -1,9 +1,8 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-An object that models a user profile.
+  Profile.swift
+  An object that models a user profile.
 */
+
 import Foundation
 
 struct Profile {

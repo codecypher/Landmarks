@@ -1,8 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The scene delegate.
+  SceneDelegate.swift
+  The scene delegate.
 */
 
 import UIKit

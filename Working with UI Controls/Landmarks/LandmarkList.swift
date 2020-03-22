@@ -1,8 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view showing a list of landmarks.
+  LandmarkList.swift
+  A view showing a list of landmarks.
 */
 
 import SwiftUI

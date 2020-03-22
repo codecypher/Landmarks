@@ -1,8 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A single row to be displayed in a list of landmarks.
+  LandmarkRow.swift
+  A single row to be displayed in a list of landmarks.
 */
 
 import SwiftUI

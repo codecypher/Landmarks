@@ -1,6 +1,8 @@
 /*
   ProfileSummary.swift
+ 
   A view that summarizes a profile.
+ 
   It takes a Profile instance and displays some basic user information.
   It takes a Profile value rather than a binding to the profile
   because the parent view (ProfileHost) manages the state for this view.

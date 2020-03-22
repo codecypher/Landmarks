@@ -1,8 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A single line in the graph.
+  GraphCapsule.swift
+  A single line in the graph.
 */
 
 import SwiftUI

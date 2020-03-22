@@ -1,8 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view that hosts an `MKMapView`.
+  MapView.swift
+  A view that hosts an MKMapView.
 */
 
 import SwiftUI
