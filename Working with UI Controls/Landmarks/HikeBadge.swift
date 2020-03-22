@@ -1,7 +1,7 @@
 /*
   HikeBadge.swift
 
- A view that shows a badge for hiking.
+  A view that shows a badge for hiking.
  
   This view composes the Badge from Drawing Paths and Shapes along with some descriptive text about the hike.
  
