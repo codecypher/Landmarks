@@ -1,5 +1,6 @@
 /*
   RotateBadgeSymbol.swift
+  Drawing and Animation
   A view that displays a rotated version of a badge symbol.
 */
 

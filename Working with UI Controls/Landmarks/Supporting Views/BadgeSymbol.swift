@@ -1,5 +1,6 @@
 /*
   BadgeSymbol.swift
+  Drawing and Animation
   A view that display a symbol in a badge.
 */
 

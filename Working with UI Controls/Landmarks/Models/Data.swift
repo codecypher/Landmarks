@@ -1,5 +1,6 @@
 /*
   Data.swift
+  SwiftUI Essentials
   Helpers for loading images and data.
 */
 

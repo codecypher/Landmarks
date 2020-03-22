@@ -1,5 +1,6 @@
 /*
   BadgeBackground.swift
+  Drawing and Animation
   A view that displays the background of a badge.
 */
 

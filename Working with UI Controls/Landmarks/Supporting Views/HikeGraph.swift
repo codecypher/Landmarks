@@ -1,5 +1,6 @@
 /*
   HikeGraph.swift
+  Drawing and Animation
   The elevation, heart rate, and pace of a hike plotted on a graph.
 */
 

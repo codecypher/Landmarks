@@ -1,5 +1,6 @@
 /*
   Badge.swift
+  Drawing and Animation
   A view that displays a badge.
 */
 

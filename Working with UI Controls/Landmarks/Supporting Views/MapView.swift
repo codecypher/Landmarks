@@ -1,5 +1,6 @@
 /*
   MapView.swift
+  SwiftUI Essentials
   A view that hosts an MKMapView.
 */
 

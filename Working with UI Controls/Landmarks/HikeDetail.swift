@@ -1,5 +1,6 @@
 /*
   HikeDetail.swift
+  Drawing and Animation
   A view showing the details for a hike.
 */
 

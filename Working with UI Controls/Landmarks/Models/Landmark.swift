@@ -1,5 +1,6 @@
 /*
   Landmark.swift
+  SwiftUI Essentials
   The model for an individual landmark.
 */
 

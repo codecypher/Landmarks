@@ -1,5 +1,6 @@
 /*
   LandmarkDetail.swift
+  SwiftUI Essentials
   A view showing the details for a landmark.
 */
 

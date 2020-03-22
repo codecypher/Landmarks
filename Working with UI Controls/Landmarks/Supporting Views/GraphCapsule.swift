@@ -1,5 +1,6 @@
 /*
   GraphCapsule.swift
+  Drawing and Animation
   A single line in the graph.
 */
 

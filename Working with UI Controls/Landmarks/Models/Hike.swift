@@ -1,5 +1,6 @@
 /*
   Hike.swift
+  Drawing and Animation
   The model for a hike.
 */
 

@@ -1,5 +1,6 @@
 /*
   HexagonParameters.swift
+  Drawing and Animation
   Size, position, and other information used to draw a badge.
 */
 

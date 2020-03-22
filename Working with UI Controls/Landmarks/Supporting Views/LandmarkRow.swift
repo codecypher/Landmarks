@@ -1,5 +1,6 @@
 /*
   LandmarkRow.swift
+  SwiftUI Essentials
   A single row to be displayed in a list of landmarks.
 */
 

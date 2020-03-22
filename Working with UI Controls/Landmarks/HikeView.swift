@@ -1,5 +1,6 @@
 /*
   HikeView.swift
+  Drawing and Animation
   A view displaying information about a hike, including an elevation graph.
 */
 
