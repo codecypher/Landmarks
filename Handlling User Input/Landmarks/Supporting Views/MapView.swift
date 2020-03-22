@@ -1,5 +1,5 @@
 /*
-  Abstract: A view that hosts an `MKMapView`.
+  Abstract: A view that hosts an MKMapView.
 */
 
 import SwiftUI

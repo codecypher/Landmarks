@@ -1,6 +1,6 @@
 /*
   HikeView.swift
-  Drawing and Animation
+  Drawing and Animation: Animating Views and Transitions
   A view displaying information about a hike, including an elevation graph.
 */
 
@@ -10,11 +10,19 @@ struct HikeView: View {
     var hike: Hike
     @State private var showDetail = false
     
+    // Extract the transition to be a static property of AnyTransition.
+    // This keeps your code clean as you expand the custom transition.
+    // You can use the same dot notation for your custom transitions as you do with SwiftUI’s included ones.
     var transition: AnyTransition {
+        // Use the move(edge:) transition, so that the graph slides in and out from the same side.
         let insertion = AnyTransition.move(edge: .trailing)
             .combined(with: .opacity)
+        
         let removal = AnyTransition.scale
             .combined(with: .opacity)
+
+        // Use the asymmetric(insertion:removal:) modifier to provide different transitions
+        // for when the view appears and disappears.
         return .asymmetric(insertion: insertion, removal: removal)
     }
     
@@ -48,6 +56,8 @@ struct HikeView: View {
 
             if showDetail {
                 HikeDetail(hike: hike)
+                    // Add a transition(_:) modifier to the conditionally visible HikeView.
+                    // Now the graph appears and disappears by slciding in and out of sight.
                 	.transition(transition)
             }
         }

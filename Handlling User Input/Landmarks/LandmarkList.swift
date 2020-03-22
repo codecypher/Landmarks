@@ -21,13 +21,13 @@ struct LandmarkList: View {
         
         // Embed the dynamically generated list of landmarks in a NavigationView.
         NavigationView {
-            // Create a nested ForEach group to transform the landmarks into rows.
             List {
                 // Add a Toggle view as the first child of the List view, 
                 Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("Favorites only")
                 }
 
+                // Create a nested ForEach group to transform the landmarks into rows.
                 ForEach(userData.landmarks) { landmark in
                     // Filter the list of landmarks by checking the showFavoritesOnly
                     // property and each landmark.isFavorite value.

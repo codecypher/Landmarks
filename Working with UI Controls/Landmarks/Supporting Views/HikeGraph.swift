@@ -1,6 +1,6 @@
 /*
   HikeGraph.swift
-  Drawing and Animation
+  Drawing and Animation: Animating Views and Transitions
   The elevation, heart rate, and pace of a hike plotted on a graph.
 */
 
@@ -18,10 +18,14 @@ func magnitude(of range: Range<Double>) -> Double {
     return range.upperBound - range.lowerBound
 }
 
+// Define a new ripple animation and apply it to each generated graph capsule
+// along with a slide transition.
 extension Animation {
     static func ripple(index: Int) -> Animation {
         Animation.spring(dampingFraction: 0.5)
+            // Speed up the animation a bit, to shorten the time each bar takes to move to its new position.
             .speed(2)
+            // Add a delay to each animation that’s based on the the capsule’s position on the graph.
             .delay(0.03 * Double(index))
     }
 }

@@ -1,6 +1,11 @@
 /*
   HexagonParameters.swift
-  Drawing and Animation
+  Drawing and Animation: Drawing Paths and Shapes
+  
+  This structure defines the details for drawing the hexagonal shape of the badge.
+  You will not modify this data, but you will use it to specify the control points
+  for drawing the lines and curves of the badge.
+ 
   Size, position, and other information used to draw a badge.
 */
 

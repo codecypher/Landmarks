@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view showing the details for a landmark.
+  Abstract: A view showing the details for a landmark.
 */
 
 import SwiftUI
@@ -10,10 +7,10 @@ import SwiftUI
 struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     
-    // add a Landmark property to the LandmarkDetail type.
+    // Add a Landmark property.
     var landmark: Landmark
 
-    // Update the LandmarkDetail view to work with the UserData object in the environment.
+    // Update the view to work with the UserData object in the environment.
     // You will use landmarkIndex when accessing or updating the landmark’s favorite status,
     // so that you are always accessing the correct version of that data.
     var landmarkIndex: Int {
@@ -37,7 +34,6 @@ struct LandmarkDetail: View {
                         .font(.title)
                 }
     
-
                 // Create a new button next to the landmark’s name.
                 Button(action: {
                     self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()

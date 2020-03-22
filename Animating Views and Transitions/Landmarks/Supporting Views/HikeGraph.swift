@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The elevation, heart rate, and pace of a hike plotted on a graph.
+  Abstract: The elevation, heart rate, and pace of a hike plotted on a graph.
 */
 
 import SwiftUI
@@ -19,7 +16,7 @@ func magnitude(of range: Range<Double>) -> Double {
     return range.upperBound - range.lowerBound
 }
 
-// define a new ripple animation and apply it to each generated graph capsule
+// Define a new ripple animation and apply it to each generated graph capsule
 // along with a slide transition.
 extension Animation {
     static func ripple(index: Int) -> Animation {

@@ -1,7 +1,10 @@
 /*
   BadgeBackground.swift
-  Drawing and Animation
+  Drawing and Animation: Drawing Paths and Shapes
   A view that displays the background of a badge.
+ 
+  Factor out the body of the Badge view into a new BadgeBackground view
+  into a new file to prepare the Badge view for additional views.
 */
 
 import SwiftUI

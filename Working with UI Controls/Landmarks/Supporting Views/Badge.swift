@@ -1,6 +1,6 @@
 /*
   Badge.swift
-  Drawing and Animation
+  Drawing and Animation: Drawing Paths and Shapes
   A view that displays a badge.
 */
 
@@ -10,6 +10,7 @@ struct Badge: View {
     static let rotationCount = 8
     
     var badgeSymbols: some View {
+        // Add a ForEach view to rotate and display copies of the badge symbol.
         ForEach(0..<Badge.rotationCount) { i in
             RotatedBadgeSymbol(
                 angle: .degrees(Double(i) / Double(Badge.rotationCount)) * 360.0)
@@ -20,7 +21,9 @@ struct Badge: View {
     var body: some View {
         ZStack {
             BadgeBackground()
-            
+
+            // Correct the size of the badge symbol by reading the surrounding geometry
+            // and scaling the symbol.
             GeometryReader { geometry in
                 self.badgeSymbols
                 .scaleEffect(1.0 / 4.0, anchor: .top)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188F442224270948002F7FBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 188F442124270947002F7FBB /* README.md */; };
 		18C78E012425A69700BC027F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18C78E002425A69700BC027F /* LICENSE.txt */; };
 		B7310DD1229F6839001079B9 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7310DD0229F6839001079B9 /* HexagonParameters.swift */; };
 		B7310DD3229F6CA9001079B9 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7310DD2229F6CA9001079B9 /* Badge.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188F442124270947002F7FBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Landmarks/README.md; sourceTree = "<group>"; };
 		18C78E002425A69700BC027F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = Landmarks/LICENSE.txt; sourceTree = "<group>"; };
 		B7310DD0229F6839001079B9 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		B7310DD2229F6CA9001079B9 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		B7394859229F194000C47603 = {
 			isa = PBXGroup;
 			children = (
+				188F442124270947002F7FBB /* README.md */,
 				18C78E002425A69700BC027F /* LICENSE.txt */,
 				B7394864229F194000C47603 /* Landmarks */,
 				B7394863229F194000C47603 /* Products */,
@@ -295,6 +298,7 @@
 				B7394896229F292F00C47603 /* umbagog.jpg in Resources */,
 				B739489D229F292F00C47603 /* chilkoottrail.jpg in Resources */,
 				18C78E012425A69700BC027F /* LICENSE.txt in Resources */,
+				188F442224270948002F7FBB /* README.md in Resources */,
 				B739489C229F292F00C47603 /* chincoteague.jpg in Resources */,
 				B739489B229F292F00C47603 /* landmarkData.json in Resources */,
 				B7394893229F292F00C47603 /* icybay.jpg in Resources */,

@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view that displays the background of a badge.
+  Abstract: A view that displays the background of a badge.
 */
 
 import SwiftUI
