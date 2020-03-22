@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view that displays a badge.
+  Abstract: A view that displays a badge.
 */
 
 import SwiftUI

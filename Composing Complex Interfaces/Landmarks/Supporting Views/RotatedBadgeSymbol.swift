@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view that displays a rotated version of a badge symbol.
+  Abstract: A view that displays a rotated version of a badge symbol.
 */
 
 import SwiftUI

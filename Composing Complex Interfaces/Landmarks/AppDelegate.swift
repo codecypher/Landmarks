@@ -1,8 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The application delegate.
+  Abstract: The application delegate.
 */
 
 import UIKit

@@ -22,8 +22,8 @@ Discover how to draw shapes and paths to create a badge that you’ll animate, w
 
 Explore the structure and layout of more complex interfaces built with SwiftUI.
 
-Composing Complex Interfaces
-Working with UI Controls
+- Composing Complex Interfaces
+- Working with UI Controls
 
 ## Framework Integration
 
