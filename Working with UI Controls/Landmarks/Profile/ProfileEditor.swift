@@ -1,6 +1,6 @@
 /*
   ProfileEditor.swift
-  App Design and Layout
+  App Design and Layout: Working with UI Controls
   An editable profile view.
 */
 

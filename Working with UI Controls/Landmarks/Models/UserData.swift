@@ -1,6 +1,5 @@
 /*
   Userdata.swift
-  SwiftUI Essentials
   A model object that stores app data.
 */
 
