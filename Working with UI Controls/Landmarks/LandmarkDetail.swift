@@ -7,14 +7,13 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
-    // This userData property gets its value automatically as long as the
-    // environmentObject(_:) modifier has been applied.
+    // Update the LandmarkDetail view to work with the UserData object in the environment.
     @EnvironmentObject var userData: UserData
 
     // Add a Landmark property.
     var landmark: Landmark
     
-    // Update the view to work with the UserData object in the environment.
+    // Update the LandmarkDetail view to work with the UserData object in the environment.
     // You will use landmarkIndex when accessing or updating the landmark’s favorite status,
     // so that you are always accessing the correct version of that data.
     var landmarkIndex: Int {
