@@ -1,5 +1,6 @@
 /*
   CategoryRow.swift
+  App Design and Layout
   A view showing a scrollable list of landmarks.
 */
 

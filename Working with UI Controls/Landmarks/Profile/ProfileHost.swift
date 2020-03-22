@@ -1,5 +1,6 @@
 /*
   ProfileHost.swift
+  App Design and Layout
   A view that hosts the profile viewer and editor.
 */
 

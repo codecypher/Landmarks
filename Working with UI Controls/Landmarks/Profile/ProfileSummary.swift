@@ -1,5 +1,6 @@
 /*
   ProfileSummary.swift
+  App Design and Layout
  
   A view that summarizes a profile.
  

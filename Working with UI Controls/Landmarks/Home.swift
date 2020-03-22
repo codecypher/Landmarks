@@ -1,5 +1,6 @@
 /*
   Home.swift
+  App Design and Layout
   A view showing featured landmarks above a list of all of the landmarks.
 */
 
